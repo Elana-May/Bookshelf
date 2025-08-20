@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="boekenkast">
+      <select id="genreSelect">
+        <option value="all">All</option>
+        <option value="action">Action</option>
+        <option value="fantasy">Fantasy</option>
+        <option value="dark">Dark</option>
+        <option value="mystery">Mystery</option>
+        <option value="romance">Romance</option>
+        <option value="dystopia">Dystopia</option>
+      </select>
+      <div class="plank" id="plank1"></div>
+      <div class="plank" id="plank2"></div>
+      <div class="plank" id="plank3"></div>
+      <button id="addbook"><a href="addbooks.html">Add a book</a></button>
+      <button id="stats">Show stats</button>
+      <p id="fullMessage">Library</p>
+    </div>
+    <div id="bookModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-author"></p>
+        <p id="modal-genre"></p>
+        <p id="modal-pages"></p>
+        <p id="modal-series"></p>
+        <button id="deleteBook">Delete</button>
+        <button id="editBook">Change</button>
+      </div>
+    </div>
+    <div id="statswindow">
+      <p>Totaal aantal boeken: <span id="total-books"></span></p>
+      <p>Action: <span id="genre-action"></span></p>
+      <p>Fantasy: <span id="genre-fantasy"></span></p>
+      <p>Dark: <span id="genre-dark"></span></p>
+      <p>Mystery: <span id="genre-mystery"></span></p>
+      <p>Romance: <span id="genre-romance"></span></p>
+      <p>Dystopia: <span id="genre-dystopia"></span></p>
+    </div>
+  </body>
+</html>
